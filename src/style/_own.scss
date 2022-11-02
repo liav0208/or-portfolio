@@ -1,0 +1,91 @@
+#own {
+    .box__1 {
+        background-color: #fff !important;
+    }
+
+    .box__2 {
+        background-color: #251b58 !important;
+    }
+
+    .box__3 {
+        background-color: #efefef !important;
+    }
+
+    .swiper {
+        background-color: #251b58;
+    }
+
+    .project__properties .property__image {
+        @include respond(sm) {
+            width: 6rem;
+        }
+    }
+
+    .swiper__macs {
+        margin: 10rem 0;
+        .swiper {
+            background-color: #fff;
+
+            &__img {
+                width: 50rem;
+
+                @include respond(sm) {
+                    width: 30rem;
+                }
+            }
+        }
+    }
+
+    .posters {
+        background-color: #fff;
+        gap: 1rem;
+        margin: 2rem 0;
+
+        @include respond(lg) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-content: center;
+            justify-items: center;
+        }
+
+        @include respond(sm) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__image {
+            max-width: 24.5%;
+
+            @include respond(xl) {
+                max-width: 22%;
+            }
+
+            @include respond(lg) {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .catalog__container {
+        background-color: #251b58;
+        padding: 5rem 0;
+        overflow: hidden;
+
+        .catalog {
+            margin: 0 auto;
+
+            // @include respond(xxl) {
+            //     max-width: 500px !important;
+            //     min-width: 500px !important;
+            //     min-height: 300px !important;
+            // }
+
+            // &__image {
+            //     @include respond(xxl) {
+            //         width: 500px !important;
+            //         height: 300px !important;
+            //     }
+            // }
+        }
+    }
+}

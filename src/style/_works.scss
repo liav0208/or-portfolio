@@ -1,0 +1,105 @@
+.works {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 84vh;
+
+    &__container {
+        text-align: center;
+    }
+
+    &__title {
+        font-family: $font_2;
+        font-size: 9rem;
+        position: relative;
+        color: transparent;
+        -webkit-text-stroke: 0.5px #000;
+        text-shadow: -6px -2px 0px $green_color;
+        z-index: 10;
+        line-height: 1;
+        letter-spacing: 3px;
+    }
+
+    &__section {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 5rem;
+        width: 80vw;
+
+        @include respond(sm) {
+            flex-direction: column;
+        }
+
+        .work {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            @include respond(sm) {
+                margin-bottom: 4rem;
+            }
+
+            &::before {
+                opacity: 0;
+                transition: all 0.2s ease-in-out;
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                z-index: 10;
+                background-image: url(../images/GreenHover.svg);
+
+                @include respond(lg) {
+                    content: none;
+                }
+            }
+
+            &:hover::before {
+                opacity: 1;
+            }
+
+            &__image {
+                width: 10rem;
+                height: 10rem;
+                margin-bottom: 2rem;
+
+                @include respond(lg) {
+                    width: 7rem;
+                    height: 7rem;
+                }
+            }
+
+            &__title {
+                font-size: 2rem;
+                font-family: $font_1;
+                color: #000;
+                font-weight: 500;
+
+                @include respond(lg) {
+                    font-size: 1.8rem;
+                }
+
+                @include respond(sm) {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        z-index: 15;
+
+        @include respond(sm) {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row-reverse;
+        }
+    }
+}

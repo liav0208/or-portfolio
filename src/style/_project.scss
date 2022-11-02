@@ -1,0 +1,298 @@
+.project {
+    &__top {
+        display: flex;
+        max-width: 70%;
+        margin: 15rem auto 5rem;
+        justify-content: center;
+
+        @include respond(xl) {
+            max-width: 90%;
+            margin-top: 7rem;
+        }
+
+        @include respond(sm) {
+            flex-direction: column;
+        }
+
+        &--left {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 30%;
+            align-self: center;
+            align-items: center;
+        }
+
+        &--right {
+            align-self: center;
+            flex-basis: 70%;
+        }
+    }
+
+    &__logo {
+        width: 13rem;
+
+        @include respond(sm) {
+            width: 10rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__detail {
+        margin-top: 2rem;
+        font-family: $font_1;
+        color: #000;
+        font-weight: 500;
+        font-size: 2rem;
+        display: none;
+    }
+
+    &__title {
+        font-family: $font_1;
+        color: #000;
+        font-weight: 700;
+        font-size: 4rem;
+
+        @include respond(sm) {
+            font-size: 3rem;
+        }
+    }
+
+    &__subtitle {
+        font-family: $font_1;
+        color: #000;
+        font-weight: 500;
+        font-size: 2.5rem;
+        margin: 3rem 0;
+
+        @include respond(sm) {
+            margin: 0 0 1rem;
+            font-size: 2rem;
+        }
+    }
+
+    &__paragraph {
+        font-family: $font_1;
+        color: #000;
+        font-weight: 500;
+        font-size: 2.5rem;
+
+        @include respond(xl) {
+            font-size: 2.2rem;
+        }
+
+        @include respond(sm) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__properties {
+        margin: 10rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 90%;
+
+        @include respond(xl) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5rem 2rem;
+            align-items: center;
+            justify-items: center;
+            margin: 5rem auto;
+        }
+
+        .logo,
+        .icon,
+        .pallete {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include respond(sm) {
+                grid-column: 1 /-1;
+                justify-content: space-between;
+                width: 80%;
+            }
+        }
+
+        .property {
+            &__text {
+                font-weight: 700;
+                font-family: $font_1;
+                font-size: 2rem;
+                color: #000;
+                margin-right: 3rem;
+
+                @include respond(sm) {
+                    font-size: 1.6rem;
+                }
+            }
+
+            &__logo {
+                width: 20rem;
+
+                @include respond(sm) {
+                    width: 15rem;
+                }
+            }
+
+            &__icon {
+                width: 8rem;
+
+                @include respond(sm) {
+                    width: 6rem;
+                }
+            }
+
+            &__image {
+                width: 10rem;
+
+                @include respond(sm) {
+                    width: 8rem;
+
+                    &:nth-child(5) {
+                        width: 4rem;
+                    }
+                }
+            }
+        }
+
+        .pallete {
+            &__boxes {
+                position: relative;
+
+                .box {
+                    position: relative;
+                    width: 4.5rem;
+                    height: 4.5rem;
+                    transition: ALL 0.3s ease-in-out;
+
+                    @include respond(sm) {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+
+                    &__1 {
+                        z-index: 20;
+                        background-color: #000;
+                    }
+
+                    &__2 {
+                        z-index: 10;
+                        background-color: #000;
+                        background-color: #ff7f00;
+                        position: absolute;
+                        top: 25%;
+                        right: 25%;
+                    }
+
+                    &__3 {
+                        background-color: #dbf227;
+                        position: absolute;
+                        top: -25%;
+                        right: -25%;
+                        z-index: 30;
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+    .swiper {
+        background-color: #dbf227;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__img {
+            width: 100rem;
+            height: auto;
+
+            @include respond(xl) {
+                width: 80rem;
+            }
+
+            @include respond(md) {
+                width: 70rem;
+            }
+        }
+
+        .area__image {
+            @include respond(sm) {
+                width: 40rem;
+            }
+        }
+
+        &-slide {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .link {
+        &__image {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+    .posters {
+        display: flex;
+        background-color: #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__image {
+            width: 27%;
+        }
+    }
+
+    .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99999;
+
+        &__container {
+            width: 65%;
+            max-height: 90vh;
+            overflow: scroll;
+            box-shadow: 0px 0px 110px 2000px #000000aa;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        &__close {
+            cursor: pointer;
+            position: absolute;
+            font-size: 4rem;
+            color: #fff;
+            top: 5rem;
+            right: 7rem;
+            z-index: 99;
+            font-family: $font_1;
+        }
+
+        &__image {
+            width: 100%;
+        }
+    }
+}
+
+#hakolav.project .popup__container {
+    width: 40%;
+
+    @include respond(sm) {
+        width: 80%;
+    }
+}

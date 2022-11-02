@@ -1,0 +1,67 @@
+#vime {
+    .box__1 {
+        background-color: #fff !important;
+    }
+
+    .box__2 {
+        background-color: #0a27ff !important;
+    }
+
+    .box__3 {
+        background-color: #ff900b !important;
+    }
+
+    .swiper {
+        background-color: #0a27ff;
+    }
+
+    .project__properties .property__image {
+        @include respond(lg) {
+            width: 8rem;
+        }
+
+        @include respond(sm) {
+            width: 5rem;
+        }
+    }
+
+    .icons {
+        max-width: 90%;
+        margin: 5rem auto;
+
+        &__title {
+            font-family: $font_1;
+            font-weight: 700;
+            font-size: 2rem;
+            color: #000;
+        }
+
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            min-width: 80%;
+            margin: 0 auto;
+            align-content: center;
+            justify-items: center;
+
+            @include respond(sm) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        &__icon {
+            max-width: 10rem;
+            margin: 4rem;
+            flex-basis: 7%;
+            transition: all 0.3s ease-in-out;
+
+            @include respond(sm) {
+                max-width: 7rem;
+            }
+
+            &:hover {
+                transform: scale(1.15);
+            }
+        }
+    }
+}

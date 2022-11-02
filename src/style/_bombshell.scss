@@ -1,0 +1,127 @@
+#bombshell {
+    .box__1 {
+        background-color: #fff !important;
+    }
+
+    .box__2 {
+        background-color: #e5117e !important;
+    }
+
+    .box__3 {
+        background-color: #000 !important;
+    }
+
+    .property__image {
+        width: 7rem;
+    }
+
+    .posters {
+        @include respond(sm) {
+            flex-direction: column;
+            gap: 5rem;
+        }
+
+        &__image {
+            @include respond(sm) {
+                width: 100%;
+            }
+        }
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        min-width: 80%;
+        margin: 10rem auto;
+        align-content: center;
+        justify-items: center;
+        gap: 5rem;
+
+        @include respond(xl) {
+            gap: 2rem;
+        }
+
+        @include respond(sm) {
+            grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 4rem;
+        }
+
+        .taste {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__text {
+                font-family: $font_1;
+                font-weight: 400;
+                font-size: 2rem;
+                color: #000;
+                text-align: center;
+            }
+        }
+
+        &__icon {
+            margin-top: 2rem;
+            width: 10rem;
+            height: 10rem;
+
+            @include respond(xl) {
+                width: 7rem;
+                height: 7rem;
+            }
+        }
+    }
+
+    .patterns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10rem auto;
+        width: 80%;
+
+        @include respond(sm) {
+            width: 45%;
+            flex-direction: column;
+            gap: 3rem;
+            margin: 5rem 0;
+        }
+
+        &__image {
+            width: 15rem;
+
+            @include respond(xl) {
+                width: 10rem;
+            }
+        }
+    }
+
+    .unders {
+        display: flex;
+        align-items: center;
+        margin: 10rem auto 5rem;
+        width: 80%;
+        justify-content: space-between;
+
+        @include respond(sm) {
+            width: 45%;
+            flex-direction: column;
+            gap: 3rem;
+            margin: 5rem 0;
+        }
+
+        &__icon {
+            width: 15rem;
+
+            @include respond(xl) {
+                width: 10rem;
+            }
+        }
+    }
+
+    .bottom-part {
+        @include respond(sm) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

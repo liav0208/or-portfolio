@@ -1,0 +1,50 @@
+.footer {
+    padding: 2rem;
+    border-top: 1px solid #000;
+    display: grid;
+    grid-template-columns: repeat((3, 1fr));
+    width: 100%;
+
+    @include respond(sm) {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 1rem;
+    }
+
+    &__copyright {
+        grid-column: 2/3;
+        justify-self: center;
+    }
+
+    &__text {
+        font-size: 2rem;
+        font-family: $font_1;
+        color: #000;
+        font-weight: 500;
+
+        @include respond(sm) {
+            font-size: 1.6rem;
+        }
+
+        .copyright {
+            color: $green_color;
+            margin-right: 0.5rem;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-self: flex-end;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        margin: 0 0.5rem;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+}
