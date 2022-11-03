@@ -9,7 +9,7 @@ const Homepage = () => {
     <main className="homepage">
       <div className="homepage__container">
         <h1 className="homepage__title">Wellcome</h1>
-        <h2 className="homepage__subtitle">to my portfolio</h2>
+        {/* <h2 className="homepage__subtitle">to my portfolio</h2> */}
         <p className="homepage__paragraph">
           Hi, I'm Or and I'm a Graphic Designer
         </p>

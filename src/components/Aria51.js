@@ -10,10 +10,10 @@ import Screen1 from "../images/Aria/Screen1.jpg";
 import Screen2 from "../images/Aria/Screen2.jpg";
 import Screen3 from "../images/Aria/Screen3.jpg";
 import Screen4 from "../images/Aria/Screen4.jpg";
-import TabletScreen1 from "../images/Aria/TabletScreen1.png";
-import TabletScreen2 from "../images/Aria/TabletScreen2.png";
-import TabletScreen3 from "../images/Aria/TabletScreen3.png";
-import TabletScreen4 from "../images/Aria/TabletScreen4.png";
+// import TabletScreen1 from "../images/Aria/TabletScreen1.png";
+// import TabletScreen2 from "../images/Aria/TabletScreen2.png";
+// import TabletScreen3 from "../images/Aria/TabletScreen3.png";
+// import TabletScreen4 from "../images/Aria/TabletScreen4.png";
 import Weblink from "../images/Aria/Weblink.jpg";
 import AreaPopup from "../images/Aria/AreaPopup.png";
 import { useState } from "react";
@@ -119,12 +119,12 @@ const Aria51 = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="tablet__mockups">
+      {/* <div className="tablet__mockups">
         <img src={TabletScreen1} alt="" className="tablet__mockup" />
         <img src={TabletScreen2} alt="" className="tablet__mockup" />
         <img src={TabletScreen3} alt="" className="tablet__mockup" />
         <img src={TabletScreen4} alt="" className="tablet__mockup" />
-      </div>
+      </div> */}
       <div className="link">
         <img
           src={Weblink}
