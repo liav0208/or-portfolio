@@ -72,6 +72,7 @@ const Hakolav = () => {
         <Swiper
           loop={true}
           initialSlide={0}
+          autoplay={true}
           breakpoints={{
             576: {
               width: 576,

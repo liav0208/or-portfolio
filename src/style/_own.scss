@@ -21,6 +21,22 @@
         }
     }
 
+    .project__properties .property__logo {
+        width: 15rem;
+
+        @include respond(xxl) {
+            width: 13rem;
+        }
+
+        @include respond(xl) {
+            width: 11rem;
+        }
+
+        @include respond(sm) {
+            width: 9rem;
+        }
+    }
+
     .swiper__macs {
         margin: 10rem 0;
         .swiper {
@@ -50,6 +66,7 @@
 
         @include respond(sm) {
             grid-template-columns: repeat(1, 1fr);
+            margin-bottom: 0;
         }
 
         &__image {
@@ -71,21 +88,24 @@
         padding: 5rem 0;
         overflow: hidden;
 
+        @include respond(xl) {
+            display: none;
+        }
+
         .catalog {
             margin: 0 auto;
+        }
+    }
 
-            // @include respond(xxl) {
-            //     max-width: 500px !important;
-            //     min-width: 500px !important;
-            //     min-height: 300px !important;
-            // }
+    .own__video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #251b58;
+        padding: 2rem 0;
 
-            // &__image {
-            //     @include respond(xxl) {
-            //         width: 500px !important;
-            //         height: 300px !important;
-            //     }
-            // }
+        video {
+            max-width: 80%;
         }
     }
 }

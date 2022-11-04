@@ -113,7 +113,6 @@ const Vime = () => {
         </Swiper>
       </div>
       <div className="icons">
-        <h4 className="icons__title">Icons</h4>
         <div className="icons__container">
           <img src={Icon1} alt="" className="icons__icon" />
           <img src={Icon2} alt="" className="icons__icon" />

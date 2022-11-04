@@ -18,14 +18,14 @@
         position: relative;
         color: transparent;
         -webkit-text-stroke: 0.5px #000;
-        text-shadow: -6px -2px 0px $green_color;
+        text-shadow: -3px -2px 0px #fff;
+        letter-spacing: 2px;
         z-index: 10;
         line-height: 1;
         margin-bottom: 2rem;
 
         @include respond(sm) {
             font-size: 5rem;
-            text-shadow: -3px -2px 0px $green_color;
         }
     }
 
@@ -33,7 +33,7 @@
         font-family: $font_2;
         font-size: 5.2rem;
         font-weight: 400;
-        color: #000;
+        color: #fff;
         line-height: 1;
         padding-bottom: 2rem;
 

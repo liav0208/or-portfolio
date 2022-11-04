@@ -10,3 +10,53 @@
 @import "./style/vime";
 @import "./style/bombshell";
 @import "./style/own";
+
+.App.-route,
+.App.works-route,
+.App.connect-route {
+    background-image: url(./images/BackgroundImage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include respond(xl) {
+        background-position: -7rem;
+    }
+
+    @include respond(lg) {
+        background-position: unset;
+        background-image: url(./images/BackgroundImageMobile.jpg);
+    }
+
+    .navbar__logo:not(.navbar__logo--white) {
+        display: none;
+    }
+
+    .footer__icon:not(.footer__icon--white) {
+        display: none;
+    }
+
+    .navbar__link,
+    .footer__text {
+        color: #fff;
+    }
+
+    .footer {
+        &__social {
+            background: #000;
+        }
+    }
+}
+
+.App:not(.-route):not(.works-route):not(.connect-route) {
+    .footer__icon--white,
+    .navbar__logo--white {
+        display: none;
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: #fff;
+    }
+}

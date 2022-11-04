@@ -21,35 +21,80 @@
         }
     }
 
-    .tablet {
-        &__mockups {
-            display: flex;
-            margin: 10rem 0;
-            justify-content: space-evenly;
-            align-items: center;
+    .property {
+        &__logo {
+            width: 15rem;
+            @include respond(xl) {
+                width: 12rem;
+            }
 
             @include respond(sm) {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                align-content: center;
-                justify-items: center;
-                gap: 2rem;
-                margin: 10rem 0;
+                width: 9rem;
             }
         }
 
-        &__mockup {
-            flex-basis: 20%;
-            max-width: 20%;
-            transition: all 0.5s ease-in-out;
+        &__icon {
+            width: 6rem;
 
-            @include respond(sm) {
-                max-width: 80%;
+            @include respond(xl) {
+                width: 5rem;
             }
 
-            &:hover {
-                transform: scale(1.2);
+            @include respond(sm) {
+                width: 4rem;
             }
         }
     }
+
+    .swiper {
+        background-color: #ff9758;
+    }
+
+    .swiper__img {
+        width: 85rem;
+
+        @include respond(xl) {
+            width: 80rem;
+        }
+
+        @include respond(md) {
+            width: 70rem;
+        }
+
+        @include respond(sm) {
+            width: 40rem;
+        }
+    }
+
+    // .tablet {
+    //     &__mockups {
+    //         display: flex;
+    //         margin: 10rem 0;
+    //         justify-content: space-evenly;
+    //         align-items: center;
+
+    //         @include respond(sm) {
+    //             display: grid;
+    //             grid-template-columns: repeat(2, 1fr);
+    //             align-content: center;
+    //             justify-items: center;
+    //             gap: 2rem;
+    //             margin: 10rem 0;
+    //         }
+    //     }
+
+    //     &__mockup {
+    //         flex-basis: 20%;
+    //         max-width: 20%;
+    //         transition: all 0.5s ease-in-out;
+
+    //         @include respond(sm) {
+    //             max-width: 80%;
+    //         }
+
+    //         &:hover {
+    //             transform: scale(1.2);
+    //         }
+    //     }
+    // }
 }

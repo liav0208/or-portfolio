@@ -1,11 +1,19 @@
 import HeaderLogo from "../images/HeaderLogo.svg";
-import { NavLink } from "react-router-dom";
+import HeaderLogoWhite from "../images/HeaderLogoWhite.svg";
+import { NavLink, Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="header">
       <nav className="navbar">
-        <img src={HeaderLogo} alt="Or Hasid" className="navbar__logo" />
+        <Link to={"/"}>
+          <img src={HeaderLogo} alt="Or Hasid" className="navbar__logo" />
+          <img
+            src={HeaderLogoWhite}
+            alt="Or Hasid"
+            className="navbar__logo navbar__logo--white"
+          />
+        </Link>
         <ul className="navbar__list">
           <li className="navbar__item">
             <NavLink className="navbar__link" end to="/">

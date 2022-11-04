@@ -6,10 +6,10 @@ import Element2 from "../images/Aria/Element2.svg";
 import Element3 from "../images/Aria/Element3.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import Screen1 from "../images/Aria/Screen1.jpg";
-import Screen2 from "../images/Aria/Screen2.jpg";
-import Screen3 from "../images/Aria/Screen3.jpg";
-import Screen4 from "../images/Aria/Screen4.jpg";
+import Screen1 from "../images/Aria/Screen1.png";
+import Screen2 from "../images/Aria/Screen2.png";
+import Screen3 from "../images/Aria/Screen3.png";
+import Screen4 from "../images/Aria/Screen4.png";
 // import TabletScreen1 from "../images/Aria/TabletScreen1.png";
 // import TabletScreen2 from "../images/Aria/TabletScreen2.png";
 // import TabletScreen3 from "../images/Aria/TabletScreen3.png";
@@ -46,11 +46,11 @@ const Aria51 = () => {
       <div className="project__properties">
         <div className="logo">
           <p className="property__text logo">Logo</p>
-          <img src={AriaLogo} alt="Hakolav" className="property__logo" />
+          <img src={AriaLogo} alt="Area 51" className="property__logo" />
         </div>
         <div className="icon">
           <p className="property__text icon">Icon</p>
-          <img src={AriaIcon} alt="Hakolav" className="property__icon" />
+          <img src={AriaIcon} alt="Area 51" className="property__icon" />
         </div>
         <div className="pallete">
           <p className="property__text pallete">Pallete</p>

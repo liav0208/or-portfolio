@@ -1,6 +1,6 @@
-import Envelope from "../images/Envelope.svg";
-import Instagram from "../images/Instagram.svg";
-import Linkedin from "../images/Linkedin.svg";
+import EnvelopeWhite from "../images/EnvelopeWhite.svg";
+import InstagramWhite from "../images/InstagramWhite.svg";
+import LinkedinWhite from "../images/LinkedinWhite.svg";
 
 const Connect = () => {
   return (
@@ -10,26 +10,30 @@ const Connect = () => {
         <h2 className="connect__subtitle">Let's work together</h2>
         <div className="connect__socials">
           <a
-            href="https://www.linkedin.com/in/or-hasid"
+            href="https://www.instagram.com/or_h.design/"
             target={"_blank"}
             rel="noreferrer"
             className="connect__link instagram"
           >
-            <img src={Instagram} alt="Instagram" className="connect__icon" />
+            <img
+              src={InstagramWhite}
+              alt="Instagram"
+              className="connect__icon"
+            />
           </a>
           <a
             href="mailto:orhasidd@gmail.com"
             className="connect__link envelope"
           >
-            <img src={Envelope} alt="Mail" className="connect__icon" />
+            <img src={EnvelopeWhite} alt="Mail" className="connect__icon" />
           </a>
           <a
-            href="https://www.instagram.com/or_h.design/"
+            href="https://www.linkedin.com/in/or-hasid"
             target={"_blank"}
             rel="noreferrer"
             className="connect__link linkedin"
           >
-            <img src={Linkedin} alt="Linkedin" className="connect__icon" />
+            <img src={LinkedinWhite} alt="Linkedin" className="connect__icon" />
           </a>
         </div>
       </div>

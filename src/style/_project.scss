@@ -290,6 +290,11 @@
             right: 7rem;
             z-index: 99;
             font-family: $font_1;
+
+            @include respond(sm) {
+                top: 3rem;
+                right: 3rem;
+            }
         }
 
         &__image {

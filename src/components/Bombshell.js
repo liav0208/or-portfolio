@@ -77,43 +77,43 @@ const Bombshell = () => {
       </div>
       <div className="icons">
         <div className="taste">
-          <p className="taste__text">מרשמלו צ'יל אאוט</p>
+          <p className="taste__text">Chill Out</p>
           <img src={Icon1} alt="" className="icons__icon" />
         </div>
         <div className="taste">
-          <p className="taste__text">מרשמלו חריף</p>
+          <p className="taste__text">Spicy</p>
           <img src={Icon2} alt="" className="icons__icon" />
         </div>
         <div className="taste">
-          <p className="taste__text">מרשמלו עם אלכוהול</p>
+          <p className="taste__text">Alcoholic</p>
           <img src={Icon3} alt="" className="icons__icon" />
         </div>
         <div className="taste">
-          <p className="taste__text">מרשמלו מתוק</p>
+          <p className="taste__text">Sweet</p>
           <img src={Icon4} alt="" className="icons__icon" />
         </div>
         <div className="taste">
-          <p className="taste__text">פיצוץ</p>
+          <p className="taste__text">Explode</p>
           <img src={Icon5} alt="" className="icons__icon" />
         </div>
         <div className="taste">
-          <p className="taste__text">מרשמלו זוגי</p>
+          <p className="taste__text">Double</p>
           <img src={Icon6} alt="" className="icons__icon" />
         </div>
         <div className="taste">
-          <p className="taste__text">מתנה</p>
+          <p className="taste__text">Gift</p>
           <img src={Icon7} alt="" className="icons__icon" />
         </div>
         <div className="taste">
-          <p className="taste__text">שתייה חמה</p>
+          <p className="taste__text">Hot Drink</p>
           <img src={Icon8} alt="" className="icons__icon" />
         </div>
         <div className="taste">
-          <p className="taste__text">טעם הפתעה</p>
+          <p className="taste__text">Surprise</p>
           <img src={Icon9} alt="" className="icons__icon" />
         </div>
         <div className="taste">
-          <p className="taste__text">מילוי</p>
+          <p className="taste__text">Fill</p>
           <img src={Icon10} alt="" className="icons__icon" />
         </div>
       </div>

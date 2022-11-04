@@ -62,13 +62,9 @@ import PAGES16 from "../images/own/PAGES16.jpg";
 import PAGES17 from "../images/own/PAGES17.jpg";
 import PAGES18 from "../images/own/PAGES18.jpg";
 import PAGES19 from "../images/own/PAGES19.jpg";
-import OwnBottom from "../images/own/OwnBottom.jpg";
-import { useState } from "react";
-// import PAGES20 from "../images/own/PAGES20.jpg";
+import VideoOwn from "../images/own/VideoOwn.mp4";
 
 const Own = () => {
-  const [showPopup, setShowPopup] = useState(false);
-
   return (
     <main id="own" className="project">
       <div className="project__top">
@@ -267,9 +263,10 @@ const Own = () => {
         <HTMLFlipBook
           className="catalog"
           showCover={false}
-          width={700}
-          height={500}
+          width={600}
+          height={420}
           drawShadow={false}
+          autoSize
         >
           {/* <img src={PAGES} alt="" /> */}
           <img src={PAGES2} alt="" className="catalog__image" />
@@ -293,13 +290,10 @@ const Own = () => {
           {/* <img src={PAGES20} alt="" /> */}
         </HTMLFlipBook>
       </div>
-      <div className="link">
-        <img
-          src={OwnBottom}
-          alt="Hakolav"
-          className="link__image"
-          onClick={() => setShowPopup(true)}
-        />
+      <div className="own__video">
+        <video width="750" controls>
+          <source type="video/mp4" src={VideoOwn} />
+        </video>
       </div>
     </main>
   );
