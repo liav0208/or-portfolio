@@ -162,7 +162,6 @@ const Own = () => {
       </div>
       <div className="swiper swiper__macs">
         <Swiper
-          spaceBetween={50}
           autoplay
           centeredSlides
           loop
@@ -185,6 +184,10 @@ const Own = () => {
             },
             1440: {
               width: 1440,
+              slidesPerView: 3,
+            },
+            1536: {
+              width: 1536,
               slidesPerView: 3,
             },
             1920: {

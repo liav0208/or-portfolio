@@ -42,8 +42,8 @@
     }
 
     // XXX-Large devices (large laptops, 1536px)
-    @if $breakpoint==lg-laptop {
-        @media only screen and (max-width: 1536px) {
+    @if $breakpoint==xxxl {
+        @media only screen and (max-width: 1540px) {
             @content;
         }
     }
