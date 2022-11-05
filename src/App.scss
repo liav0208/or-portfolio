@@ -60,3 +60,20 @@
         background: #fff;
     }
 }
+
+.body__container {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-duration: 0.2s;
+    animation-delay: 0s;
+    animation-name: bodyAnimation;
+}
+
+@keyframes bodyAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

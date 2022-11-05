@@ -56,10 +56,9 @@ function App() {
       )}
       <div
         style={{
-          visibility: lottieFinished ? "visible" : "hidden",
-          opacity: lottieFinished ? "1" : "0",
-          transition: "all 0.2s ease-in-out",
+          display: lottieFinished ? "block" : "none",
         }}
+        className="body__container"
       >
         <Header />
         <Routes>
