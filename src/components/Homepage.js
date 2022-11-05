@@ -3,6 +3,7 @@ import PsIcon from "../images/PsIcon.svg";
 import AeIcon from "../images/AeIcon.svg";
 import PrIcon from "../images/PrIcon.svg";
 import XdIcon from "../images/XdIcon.svg";
+import InAdobeicon from "../images/InAdobeicon.svg";
 
 const Homepage = () => {
   return (
@@ -24,6 +25,7 @@ const Homepage = () => {
           <img src={AeIcon} alt="" className="software" />
           <img src={PrIcon} alt="" className="software" />
           <img src={XdIcon} alt="" className="software" />
+          <img src={InAdobeicon} alt="" className="software" />
         </div>
       </div>
     </main>

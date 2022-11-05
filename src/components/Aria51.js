@@ -79,9 +79,17 @@ const Aria51 = () => {
               width: 768,
               slidesPerView: 1,
             },
+            1024: {
+              width: 1024,
+              slidesPerView: 1,
+            },
+            1280: {
+              width: 1280,
+              slidesPerView: 3,
+            },
             1440: {
               width: 1440,
-              slidesPerView: 1,
+              slidesPerView: 3,
             },
             1920: {
               width: 1920,

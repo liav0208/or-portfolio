@@ -53,6 +53,10 @@
     .swiper__img {
         width: 85rem;
 
+        @include respond(xxl) {
+            width: 50rem;
+        }
+
         @include respond(xl) {
             width: 80rem;
         }

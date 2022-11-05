@@ -82,6 +82,10 @@ const Hakolav = () => {
               width: 768,
               slidesPerView: 3,
             },
+            1440: {
+              width: 1440,
+              slidesPerView: 5,
+            },
             1920: {
               width: 1920,
               slidesPerView: 5,

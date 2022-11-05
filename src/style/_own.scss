@@ -45,6 +45,10 @@
             &__img {
                 width: 50rem;
 
+                @include respond(xxl) {
+                    width: 35rem;
+                }
+
                 @include respond(sm) {
                     width: 30rem;
                 }
