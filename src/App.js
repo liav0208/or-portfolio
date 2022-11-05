@@ -14,11 +14,15 @@ import { useLocation } from "react-router-dom";
 
 import { useState } from "react";
 import OrGif from "./assets/OrGif.gif";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 
 function App() {
   const { pathname } = useLocation();
   const [lottieFinished, setLottieFinished] = useState(false);
+
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [pathname]);
 
   useEffect(() => {
     if (window.innerWidth < 992) {
