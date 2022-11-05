@@ -10,7 +10,7 @@ const Connect = () => {
         <h2 className="connect__subtitle">Let's work together</h2>
         <div className="connect__socials">
           <a
-            href="https://www.instagram.com/or_h.design/"
+            href="https://www.instagram.com/or.h.design/"
             target={"_blank"}
             rel="noreferrer"
             className="connect__link instagram"

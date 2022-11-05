@@ -16,7 +16,7 @@ const Footer = () => {
       </div>
       <div className="footer__social">
         <a
-          href="https://www.instagram.com/or_h.design/"
+          href="https://www.instagram.com/or.h.design/"
           target={"_blank"}
           rel="noreferrer"
           className="footer__link"
