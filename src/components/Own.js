@@ -79,12 +79,11 @@ const Own = () => {
           <h1 className="project__title">Own</h1>
           <h2 className="project__subtitle">Brand Design</h2>
           <p className="project__paragraph">
-            Own is a technology company that owns Ring A1. Ring A1 allows making
-            screen gestures for digital screens when the user is the one who
-            defines the gesture that he wants to perform. Own found a
-            technological, innovative and immediate solution for an input
-            product that also functions as an accessory and allows users
-            absolute control over the product.
+            Own is a technology company that owns Ring A1. Ring A1 allows users
+            to make screen gestures and define what actions they want to
+            perform. With Own, users now have a technologically advanced,
+            innovative, and immediate solution for an input product that also
+            functions as an accessory.
           </p>
         </div>
       </div>

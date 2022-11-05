@@ -43,9 +43,9 @@ const Bombshell = () => {
           <h1 className="project__title">Bombshell</h1>
           <h2 className="project__subtitle">Brand Design</h2>
           <p className="project__paragraph">
-            a boutique shop for stuffed marshmallows with special and
-            unconventional flavors. Creating a unique series of icons,
-            advertising posters,patterns and designing coasters.
+            A boutique shop offering stuffed marshmallows in unconventional
+            flavors. Designing and creating unique icons, advertising posters,
+            patterns, and coasters.
           </p>
         </div>
       </div>

@@ -27,19 +27,19 @@ const Aria51 = () => {
         <div className="project__top--left">
           <img src={Aria51Icon} alt="Hakolav" className="project__logo" />
           <h3 className="project__detail">
-            Aria 51 <br />
+            Area 51 <br />
             Web Design
           </h3>
         </div>
         <div className="project__top--right">
-          <h1 className="project__title">Aria 51</h1>
+          <h1 className="project__title">Area 51</h1>
           <h2 className="project__subtitle">Web Design</h2>
           <p className="project__paragraph">
             Inspired by Aliens and Area 51,
             <br />
-            Illustrative design with pop and strong colors.
+            Creating visual interest with a strong color palette.
             <br />
-            includes information for those who want to travel in Area 51.
+            Information about Area 51 for those interested in visiting.
           </p>
         </div>
       </div>

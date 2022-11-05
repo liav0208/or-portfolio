@@ -39,7 +39,7 @@ const Vime = () => {
           <h1 className="project__title">ViME</h1>
           <h2 className="project__subtitle">App Design</h2>
           <p className="project__paragraph">
-            an health application that provides information and a solution to
+            An health application that provides information and a solution to
             common problems among the population that suffers from common pains
             during the day, making healthy solutions quickly accessible and
             creating a change of mind about body health.
