@@ -11,39 +11,69 @@ import Vime from "./components/Vime";
 import Bombshell from "./components/Bombshell";
 import Own from "./components/Own";
 import { useLocation } from "react-router-dom";
-// import OrLottie from "./assets/OrLottie.json";
-// import Lottie from "lottie-react";
-// import { useState } from "react";
+
+import { useState } from "react";
+import OrGif from "./assets/OrGif.gif";
+import { useEffect } from "react";
 
 function App() {
   const { pathname } = useLocation();
-  // const [lottieFinished, setLottieFinished] = useState(false);
+  const [lottieFinished, setLottieFinished] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 992) {
+      setLottieFinished(true);
+    } else {
+      setTimeout(() => {
+        setLottieFinished(true);
+      }, 3000);
+    }
+  }, []);
 
   return (
     <div className={`App ${pathname.substring(1)}-route`}>
-      {/* {!lottieFinished && (
-        <Lottie
-          animationData={OrLottie}
-          autoplay={true}
-          style={{ position: "absolute", top: 0, left: 0 }}
-          loop={false}
-          onComplete={() => setLottieFinished(true)}
-        />
-      )} */}
-      {/* <div style={{ visibility: lottieFinished ? "visible" : "hidden" }}> */}
-      <Header />
-      <Routes>
-        <Route path="/works" element={<Works />} />
-        <Route path="/connect" element={<Connect />} />
-        <Route path="/hakolav" element={<Hakolav />} />
-        <Route path="/area-51" element={<Aria51 />} />
-        <Route path="/vime" element={<Vime />} />
-        <Route path="/bombshell" element={<Bombshell />} />
-        <Route path="/own" element={<Own />} />
-        <Route path="/" element={<Homepage />} />
-      </Routes>
-      <Footer />
-      {/* </div> */}
+      {!lottieFinished && (
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            maxWidth: "100vw",
+            maxHeight: "100vh",
+            background: "#000",
+            overflow: "hidden",
+          }}
+        >
+          <img
+            src={OrGif}
+            alt=""
+            style={{
+              width: "100vw",
+              height: "100vh",
+            }}
+          />
+        </div>
+      )}
+      <div
+        style={{
+          visibility: lottieFinished ? "visible" : "hidden",
+          opacity: lottieFinished ? "1" : "0",
+          transition: "all 0.2s ease-in-out",
+        }}
+      >
+        <Header />
+        <Routes>
+          <Route path="/works" element={<Works />} />
+          <Route path="/connect" element={<Connect />} />
+          <Route path="/hakolav" element={<Hakolav />} />
+          <Route path="/area-51" element={<Aria51 />} />
+          <Route path="/vime" element={<Vime />} />
+          <Route path="/bombshell" element={<Bombshell />} />
+          <Route path="/own" element={<Own />} />
+          <Route path="/" element={<Homepage />} />
+        </Routes>
+        <Footer />
+      </div>
     </div>
   );
 }
