@@ -49,11 +49,11 @@ const Works = () => {
             <Link to="/area-51" className="works__link">
               <img
                 src={Aria51IconWhite}
-                alt="Aria 51"
+                alt="Area 51"
                 className="work__image"
               />
               <h2 className="work__title">
-                Aria 51
+                Area 51
                 <br />
                 web design
               </h2>
