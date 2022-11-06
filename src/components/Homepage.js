@@ -20,12 +20,12 @@ const Homepage = () => {
         </div>
         <h3 className="homepage__experience">Experience & software</h3>
         <div className="homepage__softwares">
-          <img src={AiIcon} alt="" className="software" />
-          <img src={PsIcon} alt="" className="software" />
-          <img src={AeIcon} alt="" className="software" />
-          <img src={PrIcon} alt="" className="software" />
-          <img src={XdIcon} alt="" className="software" />
-          <img src={InAdobeicon} alt="" className="software" />
+          <img id="ai" src={AiIcon} alt="" className="software" />
+          <img id="ps" src={PsIcon} alt="" className="software" />
+          <img id="ae" src={AeIcon} alt="" className="software" />
+          <img id="pr" src={PrIcon} alt="" className="software" />
+          <img id="xd" src={XdIcon} alt="" className="software" />
+          <img id="in" src={InAdobeicon} alt="" className="software" />
         </div>
       </div>
     </main>

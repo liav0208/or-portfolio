@@ -104,9 +104,54 @@
             margin: 0 0.8rem;
             transition: all 0.2s ease-in-out;
 
-            &:hover {
-                transform: translateY(-3px);
+            &#ai {
+                animation-fill-mode: forwards;
+                animation-duration: 0.3s;
+                animation-delay: 0s;
+                animation-name: wavelike;
+            }
+            &#ps {
+                animation-fill-mode: forwards;
+                animation-duration: 0.3s;
+                animation-delay: 0.1s;
+                animation-name: wavelike;
+            }
+            &#ae {
+                animation-fill-mode: forwards;
+                animation-duration: 0.3s;
+                animation-delay: 0.2s;
+                animation-name: wavelike;
+            }
+            &#pr {
+                animation-fill-mode: forwards;
+                animation-duration: 0.3s;
+                animation-delay: 0.3s;
+                animation-name: wavelike;
+            }
+            &#xd {
+                animation-fill-mode: forwards;
+                animation-duration: 0.3s;
+                animation-delay: 0.4s;
+                animation-name: wavelike;
+            }
+            &#in {
+                animation-fill-mode: forwards;
+                animation-duration: 0.3s;
+                animation-delay: 0.5s;
+                animation-name: wavelike;
             }
         }
+    }
+}
+
+@keyframes wavelike {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }

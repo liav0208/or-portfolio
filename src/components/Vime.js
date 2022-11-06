@@ -39,10 +39,12 @@ const Vime = () => {
           <h1 className="project__title">ViME</h1>
           <h2 className="project__subtitle">App Design</h2>
           <p className="project__paragraph">
-            An health application that provides information and a solution to
-            common problems among the population that suffers from common pains
-            during the day, making healthy solutions quickly accessible and
-            creating a change of mind about body health.
+            Teamwork - Together with two other students - Dor and Nir - we came
+            up with the concept idea, and I designed the app. ViMe is a health
+            app that provides information and solutions to common health
+            problems among people suffering from common pains during the day,
+            providing easy access to healthy solutions and changing the concept
+            of body health.
           </p>
         </div>
       </div>
