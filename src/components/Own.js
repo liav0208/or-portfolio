@@ -280,6 +280,7 @@ const Own = () => {
           width={600}
           height={420}
           drawShadow={false}
+          usePortrait={false}
           autoSize
         >
           {/* <img src={PAGES} alt="" /> */}
