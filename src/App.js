@@ -15,7 +15,7 @@ import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import OrGif from "./assets/OrGif.gif";
 import { useEffect, useLayoutEffect } from "react";
-
+// fix
 function App() {
   const { pathname } = useLocation();
   const [lottieFinished, setLottieFinished] = useState(false);
