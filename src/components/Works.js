@@ -3,9 +3,20 @@ import VimeIconWhite from "../images/VimeIconWhite.svg";
 import HakolavIconWhite from "../images/HakolavIconWhite.svg";
 import Aria51IconWhite from "../images/Aria51IconWhite.svg";
 import BombshellIconWhite from "../images/BombshellIconWhite.svg";
+import DoubleCouple from "../images/DoubleCouple/DoubleCouple.svg";
+import EasyHome from "../images/EasyHome/EasyHome.svg";
 import { Link } from "react-router-dom";
+import { useState, useRef } from "react";
 
 const Works = () => {
+  const [showMore, setShowMore] = useState(false);
+  const showMoreRef = useRef();
+
+  const onShowMore = () => {
+    setShowMore(true);
+    showMoreRef?.current?.focus();
+  };
+
   return (
     <main className="works">
       <div className="works__container">
@@ -74,6 +85,39 @@ const Works = () => {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="works__see-more">
+        <h3 className="see-more" onClick={onShowMore}>
+          {!showMore && "See More"}
+        </h3>
+        {showMore && (
+          <div className="works__section" ref={showMoreRef}>
+            <div className="work" id="easy-home">
+              <Link to="/easy-home" className="works__link">
+                <img src={EasyHome} alt="Easy Home" className="work__image" />
+                <h2 className="work__title">
+                  Easy Home
+                  <br />
+                  app design
+                </h2>
+              </Link>
+            </div>
+            <div className="work" id="double-couple">
+              <Link to="/double-couple" className="works__link">
+                <img
+                  src={DoubleCouple}
+                  alt="Double Couple"
+                  className="work__image"
+                />
+                <h2 className="work__title">
+                  Double Couple
+                  <br />
+                  web design
+                </h2>
+              </Link>
+            </div>
+          </div>
+        )}
       </div>
     </main>
   );

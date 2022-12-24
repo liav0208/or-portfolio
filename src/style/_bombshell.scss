@@ -124,4 +124,23 @@
             justify-content: center;
         }
     }
+
+    .big-box {
+        background-color: #eee;
+        &__img {
+            max-width: 100%;
+        }
+    }
+
+    .small-boxes {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #eeeeee;
+
+        &__img {
+            flex: 0 0 30%;
+            max-width: 30%;
+        }
+    }
 }

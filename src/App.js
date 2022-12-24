@@ -10,11 +10,14 @@ import Aria51 from "./components/Aria51";
 import Vime from "./components/Vime";
 import Bombshell from "./components/Bombshell";
 import Own from "./components/Own";
+
 import { useLocation } from "react-router-dom";
 
 import { useState } from "react";
 import OrGif from "./assets/OrGif.gif";
 import { useEffect, useLayoutEffect } from "react";
+import EasyHome from "./components/EasyHome";
+import DoubleCouple from "./components/DoubleCouple";
 // fix
 function App() {
   const { pathname } = useLocation();
@@ -73,6 +76,8 @@ function App() {
           <Route path="/vime" element={<Vime />} />
           <Route path="/bombshell" element={<Bombshell />} />
           <Route path="/own" element={<Own />} />
+          <Route path="/easy-home" element={<EasyHome />} />
+          <Route path="/double-couple" element={<DoubleCouple />} />
           <Route path="/" element={<Homepage />} />
         </Routes>
         <Footer />

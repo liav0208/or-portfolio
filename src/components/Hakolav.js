@@ -149,7 +149,7 @@ const Hakolav = () => {
           <div className="popup__container">
             <img
               src={HakolavPopup}
-              alt="Area 51 Popup"
+              alt="Hakolav Popup"
               className="popup__image"
             />
           </div>

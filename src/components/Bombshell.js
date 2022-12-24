@@ -27,6 +27,10 @@ import Pattern2 from "../images/bombshell/Pattern2.png";
 import Pattern3 from "../images/bombshell/Pattern3.png";
 import Pattern4 from "../images/bombshell/Pattern4.png";
 import Pattern5 from "../images/bombshell/Pattern5.png";
+import BombshellBox1 from "../images/bombshell/BombshellBox1.jpg";
+import BombshellBox2 from "../images/bombshell/BombshellBox2.jpg";
+import BombshellBox3 from "../images/bombshell/BombshellBox3.jpg";
+import BombshellBox4 from "../images/bombshell/BombshellBox4.jpg";
 
 const Bombshell = () => {
   return (
@@ -132,6 +136,26 @@ const Bombshell = () => {
           <img src={Under4} alt="Under" className="unders__icon" />
           <img src={Under5} alt="Under" className="unders__icon" />
         </div>
+      </div>
+      <div className="big-box">
+        <img src={BombshellBox1} alt="BombshellBox1" className="big-box__img" />
+      </div>
+      <div className="small-boxes">
+        <img
+          src={BombshellBox2}
+          alt="BombshellBox2"
+          className="small-boxes__img"
+        />
+        <img
+          src={BombshellBox3}
+          alt="BombshellBox3"
+          className="small-boxes__img"
+        />
+        <img
+          src={BombshellBox4}
+          alt="BombshellBox4"
+          className="small-boxes__img"
+        />
       </div>
     </main>
   );

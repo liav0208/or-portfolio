@@ -1,0 +1,111 @@
+#easyhome {
+    .box__1 {
+        background-color: #fff !important;
+    }
+
+    .box__2 {
+        background-color: #ff7f00 !important;
+    }
+
+    .box__3 {
+        background-color: #0540f2 !important;
+    }
+
+    .swiper {
+        background-color: #ff7f00;
+    }
+
+    .project__properties .property__image {
+        @include respond(lg) {
+            width: 8rem;
+        }
+
+        @include respond(sm) {
+            width: 5rem;
+        }
+    }
+
+    .project__properties .property__icon {
+        width: 12rem;
+    }
+
+    .property__logo {
+        width: 15rem;
+
+        @include respond(xl) {
+            width: 12rem;
+        }
+
+        @include respond(sm) {
+            width: 10rem;
+        }
+    }
+
+    .icons {
+        max-width: 90%;
+        margin: 5rem auto;
+
+        &__title {
+            font-family: $font_1;
+            font-weight: 700;
+            font-size: 2rem;
+            color: #000;
+        }
+
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            min-width: 80%;
+            margin: 0 auto;
+            align-content: center;
+            justify-items: center;
+
+            @include respond(sm) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        &__icon {
+            max-width: 10rem;
+            margin: 4rem;
+            flex-basis: 7%;
+            transition: all 0.3s ease-in-out;
+
+            @include respond(sm) {
+                max-width: 7rem;
+                margin: 2rem;
+            }
+
+            &:hover {
+                transform: scale(1.15);
+            }
+        }
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 0;
+
+        .link__image {
+            max-width: 30%;
+
+            @include respond(sm) {
+                max-width: 50%;
+            }
+        }
+    }
+
+    .popup .popup__container {
+        max-width: 20%;
+
+        @include respond(xl) {
+            max-width: 40%;
+        }
+
+        @include respond(sm) {
+            min-width: 80%;
+        }
+    }
+}

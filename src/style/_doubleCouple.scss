@@ -1,0 +1,114 @@
+#doublecouple {
+    .box__1 {
+        background-color: #fff !important;
+    }
+
+    .box__2 {
+        background-color: #f0eded !important;
+    }
+
+    .box__3 {
+        background-color: #000 !important;
+    }
+
+    .swiper {
+        background-color: #9513b8;
+    }
+
+    .project__properties .property__image {
+        @include respond(lg) {
+            width: 8rem;
+        }
+
+        @include respond(sm) {
+            width: 5rem;
+        }
+    }
+
+    .property__logo {
+        @include respond(xl) {
+            width: 12rem;
+        }
+
+        @include respond(sm) {
+            width: 10rem;
+        }
+    }
+
+    .icons {
+        max-width: 90%;
+        margin: 5rem auto;
+
+        &__title {
+            font-family: $font_1;
+            font-weight: 700;
+            font-size: 2rem;
+            color: #000;
+        }
+
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            min-width: 80%;
+            margin: 0 auto;
+            align-content: center;
+            justify-items: center;
+
+            @include respond(sm) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        &__icon {
+            max-width: 10rem;
+            margin: 4rem;
+            flex-basis: 7%;
+            transition: all 0.3s ease-in-out;
+
+            @include respond(sm) {
+                max-width: 7rem;
+                margin: 2rem;
+            }
+
+            &:hover {
+                transform: scale(1.15);
+            }
+        }
+    }
+
+    .swiper__macs {
+        margin: 10rem 0 0;
+        .swiper {
+            &__img {
+                width: 70rem;
+
+                @include respond(xxl) {
+                    width: 60rem;
+                }
+
+                @include respond(sm) {
+                    width: 30rem;
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .link__image {
+            max-width: 100%;
+        }
+    }
+
+    .popup .popup__container {
+        max-width: 60%;
+
+        @include respond(sm) {
+            min-width: 80%;
+        }
+    }
+}

@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     min-height: 84vh;
+    flex-direction: column;
 
     &__container {
         text-align: center;
@@ -26,7 +27,8 @@
         letter-spacing: 2px;
     }
 
-    &__section {
+    &__section,
+    &__see-more .works__section {
         display: flex;
         justify-content: space-evenly;
         margin-top: 8rem;
@@ -94,6 +96,63 @@
             align-items: center;
             justify-content: space-between;
             flex-direction: row-reverse;
+        }
+    }
+
+    &__see-more {
+        opacity: 0;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        animation-name: showing;
+        width: 80%;
+        margin: 10rem auto 0;
+        justify-content: center;
+        align-items: center;
+
+        .see-more {
+            font-size: 2rem;
+            font-family: $font_1;
+            color: #fff;
+            font-weight: 500;
+            cursor: pointer;
+            text-align: center;
+            position: relative;
+            max-width: fit-content;
+            margin: 0 auto;
+
+            &::before {
+                content: "";
+                background: #fff;
+                display: block;
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                width: 0;
+                transition: all 0.3s ease-in-out;
+                height: 3px;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+        }
+
+        .works__section {
+            width: 80%;
+            margin: 5rem auto 0;
+        }
+
+        .work {
+            width: 25%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            @include respond(sm) {
+                width: 100%;
+                align-items: stretch;
+            }
         }
     }
 }
