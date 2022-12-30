@@ -119,7 +119,7 @@ const Works = () => {
               </Link>
             </div>
             <div className="work" id="double-couple">
-              <Link to="/double-couple" className="works__link">
+              <Link to="/aia" className="works__link">
                 <img src={AIA} alt="AIA" className="work__image aia" />
                 <h2 className="work__title">
                   AIA
@@ -129,7 +129,7 @@ const Works = () => {
               </Link>
             </div>
             <div className="work" id="double-couple">
-              <Link to="/double-couple" className="works__link">
+              <Link to="/fluf" className="works__link">
                 <img src={Fluf} alt="Fluf" className="work__image fluf" />
                 <h2 className="work__title">
                   Fluf
