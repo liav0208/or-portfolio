@@ -18,6 +18,8 @@ import OrGif from "./assets/OrGif.gif";
 import { useEffect, useLayoutEffect } from "react";
 import EasyHome from "./components/EasyHome";
 import DoubleCouple from "./components/DoubleCouple";
+import Fluf from "./components/Fluf";
+import AIA from "./components/AIA";
 // fix
 function App() {
   const { pathname } = useLocation();
@@ -78,6 +80,8 @@ function App() {
           <Route path="/own" element={<Own />} />
           <Route path="/easy-home" element={<EasyHome />} />
           <Route path="/double-couple" element={<DoubleCouple />} />
+          <Route path="/fluf" element={<Fluf />} />
+          <Route path="/aia" element={<AIA />} />
           <Route path="/" element={<Homepage />} />
         </Routes>
         <Footer />

@@ -1,10 +1,10 @@
-#doublecouple {
+#aia {
     .box__1 {
         background-color: #fff !important;
     }
 
     .box__2 {
-        background-color: #f0eded !important;
+        background-color: #f9a7e9 !important;
     }
 
     .box__3 {
@@ -12,10 +12,20 @@
     }
 
     .swiper {
-        background-color: #9513b8;
+        background-color: #f4f4f4;
+    }
+
+    .project__logo {
+        width: 20rem;
+    }
+
+    .project__properties .property__icon {
+        width: 12rem;
     }
 
     .project__properties .property__image {
+        width: 5rem;
+
         @include respond(lg) {
             width: 8rem;
         }
@@ -26,6 +36,8 @@
     }
 
     .property__logo {
+        width: 15rem;
+
         @include respond(xl) {
             width: 12rem;
         }
@@ -76,21 +88,16 @@
         }
     }
 
-    .swiper__macs {
-        margin: 10rem 0 0;
-        .swiper {
-            &__img {
-                width: 70rem;
+    .swiper-wrapper {
+        align-items: center;
+    }
 
-                @include respond(xxl) {
-                    width: 60rem;
-                }
+    .swiper__img {
+        width: 50rem;
 
-                @include respond(sm) {
-                    width: 30rem;
-                    max-width: 80%;
-                }
-            }
+        @include respond(lg) {
+            width: 30rem;
+            height: auto;
         }
     }
 
@@ -98,23 +105,56 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url("../images/DoubleCouple/BottomPic.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 500px;
-        cursor: pointer;
+        padding: 5rem 0;
 
         .link__image {
+            max-width: 30%;
+
+            @include respond(sm) {
+                max-width: 50%;
+            }
+        }
+    }
+
+    .mockups {
+        max-width: 100%;
+        overflow: hidden;
+
+        img {
             max-width: 100%;
         }
     }
 
+    .logo__img.math {
+        width: 50rem;
+
+        @include respond(xxl) {
+            width: 40rem;
+        }
+
+        @include respond(xl) {
+            width: 25rem;
+        }
+    }
+
     .popup .popup__container {
-        max-width: 60%;
+        max-width: 20%;
+
+        @include respond(xl) {
+            max-width: 40%;
+        }
 
         @include respond(sm) {
             min-width: 80%;
+        }
+    }
+
+    .link {
+        background-color: #f9a7e9;
+        cursor: unset;
+
+        img {
+            cursor: unset;
         }
     }
 }

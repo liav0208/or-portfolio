@@ -5,6 +5,8 @@ import Aria51IconWhite from "../images/Aria51IconWhite.svg";
 import BombshellIconWhite from "../images/BombshellIconWhite.svg";
 import DoubleCouple from "../images/DoubleCouple/DoubleCouple.svg";
 import EasyHome from "../images/EasyHome/EasyHome.svg";
+import AIA from "../images/AIA/AIA_Works.svg";
+import Fluf from "../images/Fluf/Fluf-White.svg";
 import { Link } from "react-router-dom";
 import { useState, useRef } from "react";
 
@@ -107,12 +109,32 @@ const Works = () => {
                 <img
                   src={DoubleCouple}
                   alt="Double Couple"
-                  className="work__image"
+                  className="work__image dc"
                 />
                 <h2 className="work__title">
                   Double Couple
                   <br />
                   web design
+                </h2>
+              </Link>
+            </div>
+            <div className="work" id="double-couple">
+              <Link to="/double-couple" className="works__link">
+                <img src={AIA} alt="AIA" className="work__image aia" />
+                <h2 className="work__title">
+                  AIA
+                  <br />
+                  brand design
+                </h2>
+              </Link>
+            </div>
+            <div className="work" id="double-couple">
+              <Link to="/double-couple" className="works__link">
+                <img src={Fluf} alt="Fluf" className="work__image fluf" />
+                <h2 className="work__title">
+                  Fluf
+                  <br />
+                  brand design
                 </h2>
               </Link>
             </div>

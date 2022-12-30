@@ -120,13 +120,13 @@ const DoubleCouple = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="link">
-        <img
+      <div className="link" onClick={() => setShowPopup(true)}>
+        {/* <img
           src={BottomPic}
           alt="Easy Home"
           className="link__image"
           onClick={() => setShowPopup(true)}
-        />
+        /> */}
       </div>
       {showPopup && (
         <div className="popup" onClick={() => setShowPopup(false)}>

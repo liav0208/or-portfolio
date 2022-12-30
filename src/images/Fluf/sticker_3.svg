@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48.3 54.5" style="enable-background:new 0 0 48.3 54.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#858589;stroke-width:0.25;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#E2DEDE;stroke-width:0.25;stroke-miterlimit:10;}
+	.st4{fill:#FA9A63;}
+	.st5{fill:#FADC63;}
+	.st6{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st7{fill:url(#);stroke:#000000;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st9{fill:#FFFFFF;}
+	.st10{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st11{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M35,24.4c0,1.5-2,2.7-4.5,2.7S26,25.9,26,24.4"/>
+		<path d="M26.4,22.2c0-2.5,2-4.5,4.5-4.5s4.5,2,4.5,4.5"/>
+		<path class="st1" d="M24.6,22.6c0-3.4,2.7-6.1,6.1-6.1s6.1,2.7,6.1,6.1"/>
+		<circle cx="30.8" cy="23.7" r="2.3"/>
+		<path class="st0" d="M21.7,24.4c0,1.5-2,2.7-4.5,2.7s-4.5-1.2-4.5-2.7"/>
+		<path d="M13.2,22.2c0-2.5,2-4.5,4.5-4.5s4.5,2,4.5,4.5"/>
+		<path class="st1" d="M11.3,22.6c0-3.4,2.7-6.1,6.1-6.1s6.1,2.7,6.1,6.1"/>
+		<circle cx="17.6" cy="23.7" r="2.3"/>
+		<path class="st6" d="M44,28.3c0-0.1,0-0.1,0-0.2c0-10.9-8.8-19.7-19.7-19.7C13.5,8.4,4.7,17.2,4.6,28C2.3,30.6,1,33.6,1,36.9
+			c0,9.2,10.4,16.6,23.2,16.6s23.2-7.4,23.2-16.6C47.3,33.8,46.1,30.8,44,28.3z"/>
+		<g>
+			<g>
+				<path d="M29.7,32.8c0,3.6-2.4,6.1-5.7,6.1S19,36,19,32.4"/>
+				<ellipse class="st1" cx="24.4" cy="40.7" rx="11.9" ry="8.6"/>
+			</g>
+			<line class="st1" x1="30" y1="33.4" x2="37" y2="30.1"/>
+			<line class="st1" x1="32.9" y1="34.8" x2="39.9" y2="31.5"/>
+			<line class="st1" x1="34.7" y1="37.2" x2="41.7" y2="33.9"/>
+			<line class="st1" x1="18.3" y1="33.4" x2="11.3" y2="30.1"/>
+			<line class="st1" x1="15.4" y1="34.8" x2="8.4" y2="31.5"/>
+			<line class="st1" x1="13.7" y1="37.2" x2="6.6" y2="33.9"/>
+		</g>
+		<g>
+			<path d="M12.9,7.7C12.9,3.4,8.6,0,8.6,0S4.4,3.4,4.4,7.7s1.9,7.7,4.3,7.7S12.9,11.9,12.9,7.7z"/>
+			<path d="M44,7.7C44,3.4,39.7,0,39.7,0s-4.3,3.4-4.3,7.7s1.9,7.7,4.3,7.7S44,11.9,44,7.7z"/>
+		</g>
+	</g>
+</g>
+</svg>
