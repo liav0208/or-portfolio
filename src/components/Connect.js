@@ -6,8 +6,8 @@ const Connect = () => {
   return (
     <main className="connect">
       <div className="connect__container">
-        <h1 className="connect__title">Connect me</h1>
-        <h2 className="connect__subtitle">Let's work together</h2>
+        <h1 className="connect__title">Let's work together</h1>
+        <h2 className="connect__subtitle">Connect me</h2>
         <div className="connect__socials">
           <a
             href="https://www.instagram.com/or.h.design/"

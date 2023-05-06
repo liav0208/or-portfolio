@@ -13,16 +13,15 @@
     }
 
     &__title {
-        font-family: $font_2;
+        font-family: $font_3;
         font-size: 9rem;
         position: relative;
-        color: transparent;
-        -webkit-text-stroke: 0.5px #000;
-        text-shadow: -3px -2px 0px #fff;
+        color: #fff;
         letter-spacing: 2px;
         z-index: 10;
         line-height: 1;
         margin-bottom: 2rem;
+        font-weight: 500px;
 
         @include respond(sm) {
             font-size: 5rem;
@@ -30,15 +29,15 @@
     }
 
     &__subtitle {
-        font-family: $font_2;
-        font-size: 5.2rem;
+        font-family: $font_1;
+        font-size: 3rem;
         font-weight: 400;
         color: #fff;
         line-height: 1;
-        padding-bottom: 2rem;
+        padding: 2rem 0;
 
         @include respond(sm) {
-            font-size: 3rem;
+            font-size: 2rem;
         }
     }
 

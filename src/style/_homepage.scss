@@ -13,12 +13,10 @@
     }
 
     &__title {
-        font-family: $font_2;
+        font-family: $font_3;
         font-size: 13rem;
         position: relative;
-        color: transparent;
-        -webkit-text-stroke: 0.5px #000;
-        text-shadow: 3px -2px 0px #fff;
+        color: #fff;
         z-index: 10;
         line-height: 1;
         letter-spacing: 3px;
@@ -30,7 +28,6 @@
 
         @include respond(sm) {
             font-size: 6rem;
-            text-shadow: -3px -2px 0px #fff;
         }
     }
 
@@ -57,10 +54,10 @@
         font-family: $font_1;
         color: #fff;
         font-weight: 500;
-        background-color: #000;
 
         @include respond(sm) {
             font-size: 2.2rem;
+            margin-bottom: 1rem;
         }
     }
 
@@ -80,16 +77,23 @@
         font-weight: 500;
         color: #fff;
         margin-bottom: 2rem;
+
+        @include respond(sm) {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
     }
 
     &__experience {
-        font-family: $font_1;
+        font-family: $font_3;
         font-size: 3rem;
-        font-weight: 500;
-        color: $green_color;
+        font-weight: 700;
+        color: #fff;
 
         @include respond(sm) {
-            font-size: 2.5rem;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
         }
     }
 
@@ -98,6 +102,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include respond(sm) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            gap: 1rem;
+            max-width: 50%;
+            margin: 0 auto;
+        }
 
         .software {
             width: 4rem;

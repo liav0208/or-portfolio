@@ -19,7 +19,7 @@
 .App.works-route,
 .App.connect-route {
     background-color: #000;
-    background-image: url(./images/BackgroundImage.jpg);
+    background-image: url(./images/BackgroundImage.webp);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -29,7 +29,16 @@
 
     @include respond(lg) {
         background-position: unset;
-        background-image: url(./images/BackgroundImageMobile.jpg);
+        background-image: url(./images/BackgroundImage.webp);
+        background-size: 100%;
+        background-color: #110137;
+        background-position: top;
+    }
+
+    @include respond(sm) {
+        background-size: 150%;
+        background-color: #110137;
+        background-position: -7rem 0rem;
     }
 
     .navbar__logo:not(.navbar__logo--white) {
@@ -44,15 +53,9 @@
     .footer__text {
         color: #fff;
     }
-
-    .footer {
-        &__social {
-            background: #000;
-        }
-    }
 }
 
-.App:not(.-route):not(.works-route):not(.connect-route) {
+.App:not(.-route):not(.connect-route) {
     .footer__icon--white,
     .navbar__logo--white {
         display: none;
@@ -80,5 +83,27 @@
     }
     to {
         opacity: 1;
+    }
+}
+
+.App.works-route {
+    background-color: #fff;
+    background-image: unset;
+
+    .navbar__link,
+    .footer__text {
+        color: #000;
+    }
+
+    .navbar__logo:not(.navbar__logo--white) {
+        display: block;
+    }
+
+    .footer__icon:not(.footer__icon--white) {
+        display: block;
+    }
+
+    .footer {
+        border-color: #000;
     }
 }

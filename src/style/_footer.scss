@@ -5,6 +5,7 @@
     width: 90%;
     margin: 0 auto;
     padding: 2rem 0;
+    border-top: 1px solid #eee;
 
     @include respond(sm) {
         display: flex;
@@ -28,7 +29,7 @@
         }
 
         .copyright {
-            color: $green_color;
+            color: #794ae1;
             margin-right: 0.5rem;
         }
     }
@@ -46,8 +47,8 @@
     }
 
     &__icon {
-        width: 2rem;
-        height: 2rem;
+        width: 2.5rem;
+        height: 2.5rem;
         margin: 0 0.5rem;
         transition: all 0.2s ease-in-out;
 

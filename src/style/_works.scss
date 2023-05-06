@@ -15,41 +15,70 @@
     }
 
     &__title {
-        font-family: $font_2;
-        font-size: 9rem;
+        font-family: $font_3;
+        font-size: 7rem;
         position: relative;
-        color: transparent;
-        -webkit-text-stroke: 0.5px #000;
-        text-shadow: -3px -2px 0px #fff;
+        color: #000;
         z-index: 10;
         line-height: 1;
         letter-spacing: 3px;
         letter-spacing: 2px;
+        margin-bottom: 4rem;
+
+        @include respond(sm) {
+            font-size: 4rem;
+        }
     }
 
     &__section,
     &__see-more .works__section {
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 8rem;
-        width: 63%;
-
-        @include respond(xl) {
-            width: 75%;
-        }
-
-        @include respond(sm) {
-            flex-direction: column;
-            width: 65%;
-        }
+        width: 100%;
 
         .work {
             display: flex;
             flex-direction: column;
             position: relative;
+            min-height: 40rem;
+            margin: 2rem 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            @include respond(lg) {
+                min-height: 20rem;
+            }
 
             @include respond(sm) {
-                margin-bottom: 4rem;
+                min-height: unset;
+                max-height: 10rem;
+            }
+
+            .hover-container {
+                opacity: 0;
+                transition: all 0.3s;
+                min-height: 40rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                @include respond(lg) {
+                    min-height: 20rem;
+                }
+
+                @include respond(sm) {
+                    min-height: unset;
+                    max-height: 10rem;
+                    opacity: 0;
+                }
+            }
+
+            &:hover .hover-container {
+                opacity: 1;
+                background-color: rgba($color: #000000, $alpha: 0.5);
+
+                @include respond(sm) {
+                    opacity: 0;
+                }
             }
 
             &__image {
@@ -116,122 +145,35 @@
             flex-direction: row-reverse;
         }
     }
-
-    &__see-more {
-        opacity: 0;
-        animation-fill-mode: forwards;
-        animation-duration: 1s;
-        animation-delay: 2s;
-        animation-name: showing;
-        width: 80%;
-        margin: 10rem auto 0;
-        justify-content: center;
-        align-items: center;
-
-        @include respond(lg) {
-            margin-top: 0;
-        }
-
-        .see-more {
-            font-size: 2rem;
-            font-family: $font_1;
-            color: #fff;
-            font-weight: 500;
-            cursor: pointer;
-            text-align: center;
-            position: relative;
-            max-width: fit-content;
-            margin: 0 auto;
-
-            &::before {
-                content: "";
-                background: #fff;
-                display: block;
-                position: absolute;
-                bottom: -3px;
-                left: 0;
-                width: 0;
-                transition: all 0.3s ease-in-out;
-                height: 3px;
-            }
-
-            &:hover::before {
-                width: 100%;
-            }
-
-            @include respond(sm) {
-                margin-bottom: 4rem;
-            }
-        }
-
-        .works__section {
-            width: 80%;
-            margin: 5rem auto 0;
-
-            @include respond(sm) {
-                margin-top: 0;
-            }
-        }
-
-        .work {
-            width: 25%;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-
-            @include respond(sm) {
-                width: 100%;
-                align-items: stretch;
-            }
-        }
-    }
 }
 
 #own.work {
-    position: relative;
-    bottom: -3rem;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    animation-delay: 0s;
-    animation-name: showing;
+    background-image: url("../images/cavers-work-02.webp");
 }
 
 #vime.work {
-    position: relative;
-    bottom: -3rem;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    animation-delay: 0.4s;
-    animation-name: showing;
+    background-image: url("../images/cavers-work-06.webp");
 }
 #hakolav.work {
-    position: relative;
-    bottom: -3rem;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    animation-delay: 0.8s;
-    animation-name: showing;
+    background-image: url("../images/cavers-work-03.webp");
 }
 #area.work {
-    position: relative;
-    bottom: -3rem;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    animation-delay: 1.2s;
-    animation-name: showing;
+    background-image: url("../images/cavers-work-04.webp");
 }
 #bombshell.work {
-    position: relative;
-    bottom: -3rem;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    animation-delay: 1.6s;
-    animation-name: showing;
+    background-image: url("../images/cavers-work-05.webp");
+}
+#easy-home.work {
+    background-image: url("../images/cavers-work-12.webp");
+}
+#double-couple.work {
+    background-image: url("../images/cavers-work-08.webp");
+}
+#AIA.work {
+    background-image: url("../images/cavers-work-10.webp");
+}
+#fluf.work {
+    background-image: url("../images/cavers-work-07.webp");
 }
 
 @keyframes showing {
